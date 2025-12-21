@@ -1,14 +1,16 @@
-import { Container, Filters, Title, TopBar } from '@/components/shared'
+import { Container, Title } from '@/components/shared'
+import { Filters } from '@/components/shared/filter'
+import { TopBar } from '@/components/shared/main'
 
 export default function Home() {
 	return (
 		<>
-    {/*Зона верхних категорий*/}
+			{/*Зона верхних категорий*/}
 			<Container className='mt-10'>
 				<Title text={'Все меню'} size='lg' className='font-extrabold' />
 			</Container>
 			<TopBar />
-      {/*Зона категории товары и так далее*/}
+			{/*Зона категории товары и так далее*/}
 			<Container className='mt-10 pb-14'>
 				<div className='flex gap-15'>
 					{/*Фильтрация*/}

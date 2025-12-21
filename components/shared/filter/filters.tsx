@@ -1,9 +1,9 @@
 import React from 'react'
-import { Input } from '../ui'
+import { Input } from '../../ui'
+import { RangeSlider } from '../range-slider'
+import { Title } from '../title'
 import { CheckboxFilterGroup } from './checkbox-filter-group'
 import { FilterCheckbox } from './filter-checkbox'
-import { RangeSlider } from './range-slider'
-import { Title } from './title'
 
 interface Props {
 	className?: string
@@ -112,6 +112,7 @@ export const Filters: React.FC<Props> = ({ className }) => {
 						value: '6',
 					},
 				]}
+				defaultValue={[]}
 			/>
 		</div>
 	)
