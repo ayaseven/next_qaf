@@ -1,6 +1,7 @@
 import { Container, Title } from '@/components/shared'
 import { Filters } from '@/components/shared/filter'
 import { TopBar } from '@/components/shared/main'
+import { ProductGroupList } from '@/components/shared/product'
 
 export default function Home() {
 	return (
@@ -12,14 +13,87 @@ export default function Home() {
 			<TopBar />
 			{/*Зона категории товары и так далее*/}
 			<Container className='mt-10 pb-14'>
-				<div className='flex gap-15'>
+				<div className='flex gap-20'>
 					{/*Фильтрация*/}
 					<div className='w-62.5'>
 						<Filters />
 					</div>
 					{/*Список товаров*/}
 					<div className='flex-1'>
-						<div className='flex flex-col gap-16'>Список товаров</div>
+						<div className='flex flex-col gap-16'>
+							<ProductGroupList
+								title={'Горячее'}
+								items={[
+									{
+										id: 1,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},{
+										id: 1,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},{
+										id: 1,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},{
+										id: 1,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},{
+										id: 1,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},{
+										id: 1,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},{
+										id: 1,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},{
+										id: 1,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 1,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+								]}
+								categoryId={1}
+								className={''}
+							/>
+						</div>
 					</div>
 				</div>
 			</Container>
