@@ -22,7 +22,8 @@ export default function Home() {
 					<div className='flex-1'>
 						<div className='flex flex-col gap-16'>
 							<ProductGroupList
-								title={'Горячее'}
+								categoryId={1}
+								title={'Сезонное меню'}
 								items={[
 									{
 										id: 1,
@@ -31,42 +32,48 @@ export default function Home() {
 											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
 										price: 850,
 										items: [{ price: 850 }],
-									},{
+									},
+									{
 										id: 2,
 										name: 'Жаркое по-домашнему',
 										imageUrl:
 											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
 										price: 850,
 										items: [{ price: 850 }],
-									},{
+									},
+									{
 										id: 3,
 										name: 'Жаркое по-домашнему',
 										imageUrl:
 											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
 										price: 850,
 										items: [{ price: 850 }],
-									},{
+									},
+									{
 										id: 4,
 										name: 'Жаркое по-домашнему',
 										imageUrl:
 											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
 										price: 850,
 										items: [{ price: 850 }],
-									},{
+									},
+									{
 										id: 5,
 										name: 'Жаркое по-домашнему',
 										imageUrl:
 											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
 										price: 850,
 										items: [{ price: 850 }],
-									},{
+									},
+									{
 										id: 6,
 										name: 'Жаркое по-домашнему',
 										imageUrl:
 											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
 										price: 850,
 										items: [{ price: 850 }],
-									},{
+									},
+									{
 										id: 7,
 										name: 'Жаркое по-домашнему',
 										imageUrl:
@@ -81,14 +88,16 @@ export default function Home() {
 											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
 										price: 850,
 										items: [{ price: 850 }],
-									},{
+									},
+									{
 										id: 9,
 										name: 'Жаркое по-домашнему',
 										imageUrl:
 											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
 										price: 850,
 										items: [{ price: 850 }],
-									},{
+									},
+									{
 										id: 10,
 										name: 'Жаркое по-домашнему',
 										imageUrl:
@@ -97,10 +106,10 @@ export default function Home() {
 										items: [{ price: 850 }],
 									},
 								]}
-								categoryId={1}
 								className={''}
 							/>
 							<ProductGroupList
+								categoryId={2}
 								title={'Завтраки'}
 								items={[
 									{
@@ -110,42 +119,48 @@ export default function Home() {
 											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
 										price: 850,
 										items: [{ price: 850 }],
-									},{
+									},
+									{
 										id: 2,
 										name: 'Жаркое по-домашнему',
 										imageUrl:
 											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
 										price: 850,
 										items: [{ price: 850 }],
-									},{
+									},
+									{
 										id: 3,
 										name: 'Жаркое по-домашнему',
 										imageUrl:
 											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
 										price: 850,
 										items: [{ price: 850 }],
-									},{
+									},
+									{
 										id: 4,
 										name: 'Жаркое по-домашнему',
 										imageUrl:
 											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
 										price: 850,
 										items: [{ price: 850 }],
-									},{
+									},
+									{
 										id: 5,
 										name: 'Жаркое по-домашнему',
 										imageUrl:
 											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
 										price: 850,
 										items: [{ price: 850 }],
-									},{
+									},
+									{
 										id: 6,
 										name: 'Жаркое по-домашнему',
 										imageUrl:
 											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
 										price: 850,
 										items: [{ price: 850 }],
-									},{
+									},
+									{
 										id: 7,
 										name: 'Жаркое по-домашнему',
 										imageUrl:
@@ -160,14 +175,16 @@ export default function Home() {
 											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
 										price: 850,
 										items: [{ price: 850 }],
-									},{
+									},
+									{
 										id: 9,
 										name: 'Жаркое по-домашнему',
 										imageUrl:
 											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
 										price: 850,
 										items: [{ price: 850 }],
-									},{
+									},
+									{
 										id: 10,
 										name: 'Жаркое по-домашнему',
 										imageUrl:
@@ -176,7 +193,443 @@ export default function Home() {
 										items: [{ price: 850 }],
 									},
 								]}
-								categoryId={2}
+								className={''}
+							/>
+							<ProductGroupList
+								categoryId={3}
+								title={'Закуски и салаты'}
+								items={[
+									{
+										id: 1,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 2,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 3,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 4,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 5,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 6,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 7,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 8,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 9,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 10,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+								]}
+								className={''}
+							/>
+
+							<ProductGroupList
+								categoryId={4}
+								title={'Горячее'}
+								items={[
+									{
+										id: 1,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 2,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 3,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 4,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 5,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 6,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 7,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 8,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 9,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 10,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+								]}
+								className={''}
+							/>
+
+							<ProductGroupList
+								categoryId={5}
+								title={'Напитки'}
+								items={[
+									{
+										id: 1,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 2,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 3,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 4,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 5,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 6,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 7,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 8,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 9,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 10,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+								]}
+								className={''}
+							/>
+							<ProductGroupList
+								categoryId={6}
+								title={'Десерты'}
+								items={[
+									{
+										id: 1,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 2,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 3,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 4,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 5,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 6,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 7,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 8,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 9,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 10,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+								]}
+								className={''}
+							/>
+							<ProductGroupList
+								categoryId={7}
+								title={'Супы'}
+								items={[
+									{
+										id: 1,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 2,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 3,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 4,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 5,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 6,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 7,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 8,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 9,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 10,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+								]}
 								className={''}
 							/>
 						</div>
