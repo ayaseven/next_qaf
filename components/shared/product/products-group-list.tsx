@@ -25,22 +25,20 @@ export const ProductGroupList: React.FC<Props> = ({
 	{
 		/*Управление состоянием верхней навигации и его позиции */
 	}
+	const activeCategoryId = useCategoryStore(state => state.activeId)
 	const setActiveCategoryId = useCategoryStore(state => state.setActiveId)
+
 	const intersectionRef = React.useRef(null!)
 	const intersection = useIntersection(intersectionRef, {
 		threshold: 0.2,
 	})
 
 	React.useEffect(() => {
-		if (intersection?.isIntersecting) {
-			setActiveCategoryId(categoryId)
-			if (title === 'Сезонное меню') {
-				window.scrollTo({
-					top: 0,
-				})
-			}
-		}
-	}, [categoryId, intersection?.isIntersecting, title])
+		if (!intersection?.isIntersecting) return
+		if (activeCategoryId === categoryId) return
+
+		setActiveCategoryId(categoryId)
+	}, [intersection?.isIntersecting, categoryId, activeCategoryId])
 
 	return (
 		<>
