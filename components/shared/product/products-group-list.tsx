@@ -25,21 +25,18 @@ export const ProductGroupList: React.FC<Props> = ({
 	{
 		/*Управление состоянием верхней навигации и его позиции */
 	}
-	const activeCategoryId = useCategoryStore(state => state.activeId)
 	const setActiveCategoryId = useCategoryStore(state => state.setActiveId)
 
 	const intersectionRef = React.useRef(null!)
 	const intersection = useIntersection(intersectionRef, {
-		threshold: 0.2,
+		threshold: 0.4,
 	})
 
 	React.useEffect(() => {
-		if (!intersection?.isIntersecting) return
-		if (activeCategoryId === categoryId) return
-
-		setActiveCategoryId(categoryId)
-	}, [intersection?.isIntersecting, categoryId, activeCategoryId])
-
+		if (intersection?.isIntersecting) {
+			setActiveCategoryId(categoryId)
+		}
+	}, [categoryId, intersection?.isIntersecting, title])
 	return (
 		<>
 			<div

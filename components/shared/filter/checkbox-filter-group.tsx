@@ -49,7 +49,7 @@ export const CheckboxFilterGroup: React.FC<Props> = ({
 					className='bg-gray-50 border-none'
 				/>
 			</div>
-			<div className=' flex flex-col gap-4  pr-2 overflow-auto scrollbar '>
+			<div className='flex flex-col gap-4  pr-2 overflow-auto scrollbar '>
 				{list?.map((item, i) => (
 					<FilterCheckbox
 						key={i}
