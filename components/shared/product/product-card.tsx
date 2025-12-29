@@ -24,8 +24,8 @@ export const ProductCard: React.FC<Props> = ({
 	return (
 		<div className={className}>
 			<Link href={`./product/${id}`}>
-				<div className='flex justify-center p-6 bg-gray-50 rounded-lg h-60'>
-					<img className='h-auto object-cover rounded-md' src={imageUrl} alt={name} />
+				<div className='flex justify-center p-6 bg-gray-50 rounded-lg w-full '>
+					<img className='object-cover rounded-md' src={imageUrl} alt={name} />
 				</div>
 				<Title text={name} size='sm' className='mb-1 mt-3 font-bold' />
 				<p className='text-sm text-gray-400'>{ingredients}</p>

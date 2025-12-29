@@ -1,0 +1,31 @@
+datasource db {
+  provider = "postgresql"
+}
+
+generator client {
+  provider  = "prisma-client-js"
+  output    = "./generated/prisma-client"
+  directUrl = env("PRISMA_DATABASE_URL")
+}
+
+model User {
+  id Int @id @default(autoincrement())
+
+  fullName String
+  email    String
+  password String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Product {
+  id Int @id @default(autoincrement())
+
+  name     String
+  imageUrl String
+  text     String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}

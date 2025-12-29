@@ -91,6 +91,4 @@ html {
 		@apply bg-background text-foreground;
 	}
 }
-a {
-	cursor: pointer;
-}
+
