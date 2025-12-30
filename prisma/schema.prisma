@@ -1,11 +1,20 @@
-datasource db {
-  provider = "postgresql"
-}
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+// prisma/schema.prisma
 
 generator client {
-  provider  = "prisma-client-js"
-  output    = "./generated/prisma-client"
-  directUrl = env("PRISMA_DATABASE_URL")
+  provider = "prisma-client-js"
+  // В Prisma 7+ кастомный путь (output) становится обязательным
+  output   = "../lib/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  // URL здесь больше не нужен, он берется из prisma.config.ts
 }
 
 model User {
