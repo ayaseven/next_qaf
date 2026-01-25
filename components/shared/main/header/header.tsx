@@ -1,9 +1,11 @@
 import { cn } from '@/lib/utils'
 import { ArrowRight, ShoppingCart, User } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
-import { Button } from '../../ui'
-import { Container } from '../container'
+import { Button } from '../../../ui'
+import { Container } from '../../container'
+import { SearchInput } from './searchInput'
 
 interface Props {
 	className?: string
@@ -14,15 +16,19 @@ export const Header: React.FC<Props> = ({ className }) => {
 		<header className={cn('border border-b', className)}>
 			<Container className='flex items-center justify-between py-8'>
 				{/*Левая часть*/}
-				<div className='flex items-center gap-4'>
-					<Image src='/logo1.png' width={50} height={50} alt='Logo' />
-					<div>
-						<h1 className='text-2xl uppercase font-black'>QAF GROZNY</h1>
-						<p className='text-sm text-gray-400 leading-3'>
-							вкусней уже некуда
-						</p>
+				<Link href='/'>
+					<div className='flex items-center gap-4'>
+						<Image src='/logo1.png' width={50} height={50} alt='Logo' />
+						<div>
+							<h1 className='text-2xl uppercase font-black'>QAF GROZNY</h1>
+							<p className='text-sm text-gray-400 leading-3'>
+								вкусней уже некуда
+							</p>
+						</div>
 					</div>
-				</div>
+				</Link>
+				{/*Поиск по центру*/}
+				<SearchInput />
 				{/*Левая часть*/}
 				<div className='flex items-center gap-3'>
 					<Button variant='outline' className='flex items-center gap-1'>

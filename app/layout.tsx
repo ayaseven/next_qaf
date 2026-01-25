@@ -1,4 +1,4 @@
-import { Header } from '@/components/shared/main/header'
+import { Header } from '@/components/shared/main/header/header'
 import type { Metadata } from 'next'
 import { Nunito } from 'next/font/google'
 import './globals.css'
@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			<meta name='viewport' content='width=device-width, initial-scale=1.0' />
 			<body className={`${geistSans.variable} antialiased`}>
 				<main className='min-h-screen'>
 					<Header />
