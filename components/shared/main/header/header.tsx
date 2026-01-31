@@ -5,7 +5,7 @@ import Link from 'next/link'
 import React from 'react'
 import { Button } from '../../../ui'
 import { Container } from '../../container'
-import { SearchInput } from './searchInput'
+import { SearchInput } from './search-input'
 
 interface Props {
 	className?: string
