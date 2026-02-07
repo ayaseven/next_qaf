@@ -25,7 +25,7 @@ export const SearchInput: React.FC<Props> = ({ className }) => {
 				<div
 					ref={ref}
 					className={cn(
-						'flex rounded-2xl flex-1 justify-between relative h-11 z-30',
+						'hidden sm:flex sm:rounded-2xl sm:flex-1 sm:justify-between sm:relative sm:h-11 sm:z-30',
 						className,
 					)}
 				>

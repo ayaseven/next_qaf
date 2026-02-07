@@ -7,7 +7,7 @@ export default function Home() {
 	return (
 		<>
 			{/*Зона верхних категорий*/}
-			<Container className='mt-10'>
+			<Container className='mt-10 px-2'>
 				<Title text={'Все меню'} size='lg' className='font-extrabold' />
 			</Container>
 			<TopBar />
@@ -15,12 +15,12 @@ export default function Home() {
 			<Container className='mt-10 pb-14'>
 				<div className='flex gap-20'>
 					{/*Фильтрация*/}
-					<div className='w-62.5'>
+					<div className='hidden sm:w-62.5'>
 						<Filters />
 					</div>
 					{/*Список товаров*/}
 					<div className='flex-1'>
-						<div className='flex flex-col gap-16'>
+						<div className='flex flex-col gap-16 px-2'>
 							<ProductGroupList
 								categoryId={1}
 								title={'Сезонное меню'}

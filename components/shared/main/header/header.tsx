@@ -5,6 +5,7 @@ import Link from 'next/link'
 import React from 'react'
 import { Button } from '../../../ui'
 import { Container } from '../../container'
+import { HamburgerMenu } from './hamburger-menu'
 import { SearchInput } from './search-input'
 
 interface Props {
@@ -13,15 +14,24 @@ interface Props {
 
 export const Header: React.FC<Props> = ({ className }) => {
 	return (
-		<header className={cn('border border-b', className)}>
-			<Container className='flex items-center justify-between py-8'>
+		<header className={cn('border-b border-gray-100', className)}>
+			<Container className='flex items-center justify-between py-8 px-2'>
 				{/*Левая часть*/}
 				<Link href='/'>
 					<div className='flex items-center gap-4'>
-						<Image src='/logo1.png' width={50} height={50} alt='Logo' />
+						<div className='relative w-10 h-10 sm:w-12.5 sm:h-12.5'>
+							<Image
+								className='object-contain'
+								src='/logo1.png'
+								fill
+								alt='Logo'
+							/>
+						</div>
 						<div>
-							<h1 className='text-2xl uppercase font-black'>QAF GROZNY</h1>
-							<p className='text-sm text-gray-400 leading-3'>
+							<h1 className=' text-sm sm:text-2xl uppercase font-black'>
+								QAF GROZNY
+							</h1>
+							<p className='text-xs text-gray-400 leading-3'>
 								вкусней уже некуда
 							</p>
 						</div>
@@ -30,9 +40,8 @@ export const Header: React.FC<Props> = ({ className }) => {
 				{/*Поиск по центру*/}
 				<SearchInput />
 				{/*Левая часть*/}
-				<div className='flex items-center gap-3'>
+				<div className='hidden sm:flex sm:items-center sm:gap-3 '>
 					<Button variant='outline' className='flex items-center gap-1'>
-						{' '}
 						<User size={16} />
 						Войти
 					</Button>
@@ -51,6 +60,7 @@ export const Header: React.FC<Props> = ({ className }) => {
 						</Button>
 					</div>
 				</div>
+				<HamburgerMenu />
 			</Container>
 		</header>
 	)
