@@ -24,6 +24,7 @@ export const Header: React.FC<Props> = ({ className }) => {
 								className='object-contain'
 								src='/logo1.png'
 								fill
+								sizes='fill'
 								alt='Logo'
 							/>
 						</div>

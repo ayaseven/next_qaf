@@ -1,2 +1,2 @@
 export { Header } from './header/header'
-export { TopBar } from './top-bar'
+export { TopRowOfCategories } from './top-row-of-categories'

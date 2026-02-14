@@ -25,6 +25,16 @@
 }
 
 @layer base {
+  /* Скрываем скроллбар для Chrome, Safari и Opera */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Скрываем для IE, Edge и Firefox */
+  html {
+    -ms-overflow-style: none;  /* IE и Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
 	:root {
 		--background: 0 0% 100%; /* Добавьте эту строку, если её нет */
 		--foreground: 20 14.3% 4.1%;
@@ -91,4 +101,3 @@ html {
 		@apply bg-background text-foreground;
 	}
 }
-

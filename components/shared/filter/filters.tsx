@@ -10,7 +10,7 @@ interface Props {
 
 export const Filters: React.FC<Props> = ({ className }) => {
 	return (
-		<div className='sticky top-33'>
+		<div className='sticky top-33 px-2'>
 			{/*Верхний чекбокс*/}
 			<Title text='Фильтрация' size='sm' className='mb-5 font-bold' />
 			<div className='flex flex-col gap-4'>

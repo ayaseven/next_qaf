@@ -1,6 +1,6 @@
 import { Container, Title } from '@/components/shared'
 import { Filters } from '@/components/shared/filter'
-import { TopBar } from '@/components/shared/main'
+import { TopRowOfCategories } from '@/components/shared/main'
 import { ProductGroupList } from '@/components/shared/product'
 
 export default function Home() {
@@ -8,14 +8,18 @@ export default function Home() {
 		<>
 			{/*Зона верхних категорий*/}
 			<Container className='mt-10 px-2'>
-				<Title text={'Все меню'} size='lg' className='font-extrabold' />
+				<Title
+					text={'Все меню'}
+					size='lg'
+					className='text-center w-full font-extrabold sm:text-left'
+				/>
 			</Container>
-			<TopBar />
+			<TopRowOfCategories />
 			{/*Зона категории товары и так далее*/}
 			<Container className='mt-10 pb-14'>
 				<div className='flex gap-20'>
 					{/*Фильтрация*/}
-					<div className='hidden sm:w-62.5'>
+					<div className='hidden sm:w-62.5 sm:block'>
 						<Filters />
 					</div>
 					{/*Список товаров*/}
@@ -33,8 +37,32 @@ export default function Home() {
 										price: 850,
 										items: [{ price: 850 }],
 									},
+									{
+										id: 2,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 3,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
+									{
+										id: 4,
+										name: 'Жаркое по-домашнему',
+										imageUrl:
+											'https://optim.tildacdn.com/tild6362-3233-4234-b934-373733396133/-/format/webp/image-01-09-25-23-53.jpeg.webp',
+										price: 850,
+										items: [{ price: 850 }],
+									},
 								]}
-								className={''}
+								className={'text-center w-full  sm:text-left'}
 							/>
 							<ProductGroupList
 								categoryId={2}
@@ -49,7 +77,7 @@ export default function Home() {
 										items: [{ price: 850 }],
 									},
 								]}
-								className={''}
+								className={'text-center w-full  sm:text-left '}
 							/>
 							<ProductGroupList
 								categoryId={3}
@@ -64,7 +92,7 @@ export default function Home() {
 										items: [{ price: 850 }],
 									},
 								]}
-								className={''}
+								className={'text-center w-full  sm:text-left '}
 							/>
 							<ProductGroupList
 								categoryId={4}
@@ -79,7 +107,7 @@ export default function Home() {
 										items: [{ price: 850 }],
 									},
 								]}
-								className={''}
+								className={'text-center w-full  sm:text-left '}
 							/>
 							<ProductGroupList
 								categoryId={5}
@@ -94,7 +122,7 @@ export default function Home() {
 										items: [{ price: 850 }],
 									},
 								]}
-								className={''}
+								className={'text-center w-full  sm:text-left '}
 							/>
 							<ProductGroupList
 								categoryId={6}
@@ -109,7 +137,7 @@ export default function Home() {
 										items: [{ price: 850 }],
 									},
 								]}
-								className={''}
+								className={'text-center w-full  sm:text-left '}
 							/>
 							<ProductGroupList
 								categoryId={7}
@@ -124,7 +152,7 @@ export default function Home() {
 										items: [{ price: 850 }],
 									},
 								]}
-								className={''}
+								className={'text-center w-full  sm:text-left '}
 							/>
 						</div>
 					</div>

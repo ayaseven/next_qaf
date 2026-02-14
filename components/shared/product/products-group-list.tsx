@@ -46,7 +46,7 @@ export const ProductGroupList: React.FC<Props> = ({
 			>
 				<Title text={title} size='lg' className='font-extrabold mb-5' />
 				{/*Сетка*/}
-				<div className={cn('grid grid-cols-3 gap-12.5')}>
+				<div className={cn('grid grid-cols-1 sm:grid-cols-3 gap-8')}>
 					{items.map((product, i) => (
 						<ProductCard
 							key={product.id}
