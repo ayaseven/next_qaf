@@ -1,6 +1,6 @@
 export { Container } from './container'
 export { ProductCard } from './product'
 export { RangeSlider } from './range-slider'
-export { SortPopup } from './upperCategories/sort-popup'
+export { SortPopup } from './upper-categories/sort-popup'
 export { Title } from './title'
-export { Categories } from './upperCategories'
+export { Categories } from './upper-categories'

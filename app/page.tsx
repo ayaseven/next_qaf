@@ -1,5 +1,5 @@
 import { Container, Title } from '@/components/shared'
-import { Filters } from '@/components/shared/filter'
+// import { Filters } from '@/components/shared/filter'
 import { TopRowOfCategories } from '@/components/shared/main'
 import { ProductGroupList } from '@/components/shared/product'
 
@@ -19,9 +19,9 @@ export default function Home() {
 			<Container className='mt-10 pb-14'>
 				<div className='flex gap-20'>
 					{/*Фильтрация*/}
-					<div className='hidden sm:w-62.5 sm:block'>
+					{/* <div className='hidden sm:w-62.5 sm:block'>
 						<Filters />
-					</div>
+					</div> */}
 					{/*Список товаров*/}
 					<div className='flex-1'>
 						<div className='flex flex-col gap-16 px-2'>

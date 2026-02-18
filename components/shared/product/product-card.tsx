@@ -24,10 +24,10 @@ export const ProductCard: React.FC<Props> = ({
 	return (
 		<>
 			<Link
-				className='px-2 sm:px-0 sm:transition-all sm:hover:scale-105 sm:duration-300'
+				className='px-2 sm:px-0 sm:transition-all sm:hover:scale-105 sm:duration-300 sm:w-70'
 				href={`./product/${id}`}
 			>
-				<div className='flex justify-center bg-gray-100  w-full h-80'>
+				<div className='flex justify-center  w-full h-80'>
 					<img
 						className='w-full h-full object-cover rounded-t-2xl'
 						src={imageUrl}
@@ -40,7 +40,7 @@ export const ProductCard: React.FC<Props> = ({
 						<b className=''>{price} ₽</b>
 					</span>
 					<p className='text-sm text-gray-400'>{ingredients}</p>
-					<div className='flex flex-col  items-center mt-4 pb-5 px-5 '>
+					<div className='flex flex-col  items-center mt-4 pb-5 px-5 sm:transition-all sm:hover:scale-105 sm:duration-300'>
 						<Button size={'cardProductSize'} variant='default'>
 							<ShoppingBasket size={20} className='mr-1' />
 							Добавить

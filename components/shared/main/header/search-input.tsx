@@ -50,9 +50,7 @@ export const SearchInput: React.FC<Props> = ({ className }) => {
 								className='rounded-sm w-8 h-8'
 								src='https://optim.tildacdn.com/tild3135-3738-4162-a431-663364323563/-/format/webp/noroot.png.webp'
 							/>
-							<div
-							// onClick={onClickItem}
-							></div>
+							<div></div>
 						</Link>
 					</div>
 				</div>

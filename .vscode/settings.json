@@ -1,3 +1,4 @@
 {
-	"cSpell.words": ["скроллбар", "autoincrement", "vaul"]
+	"cSpell.words": ["скроллбар", "autoincrement", "vaul"],
+	"postman.settings.dotenv-detection-notification-visibility": false
 }

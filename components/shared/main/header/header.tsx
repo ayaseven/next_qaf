@@ -5,7 +5,7 @@ import Link from 'next/link'
 import React from 'react'
 import { Button } from '../../../ui'
 import { Container } from '../../container'
-import { HamburgerMenu } from './hamburger-menu'
+import { HamburgerMenu } from './hamburger-menu/hamburger-menu'
 import { SearchInput } from './search-input'
 
 interface Props {
