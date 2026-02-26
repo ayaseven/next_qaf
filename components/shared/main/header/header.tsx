@@ -6,7 +6,7 @@ import React from 'react'
 import { Button } from '../../../ui'
 import { Container } from '../../container'
 import { HamburgerMenu } from './hamburger-menu/hamburger-menu'
-import { SearchInput } from './search-input'
+import { SearchInput } from './search-input/search-input'
 
 interface Props {
 	className?: string

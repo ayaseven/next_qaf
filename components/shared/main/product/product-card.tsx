@@ -2,7 +2,7 @@ import { Button } from '@/components/ui'
 import { ShoppingBasket } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
-import { Title } from '../title'
+import { Title } from '../../title'
 
 interface Props {
 	id: number

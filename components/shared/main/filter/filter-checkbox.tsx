@@ -1,9 +1,9 @@
 import React from 'react'
-import { Checkbox } from '../../ui/checkbox'
+import { Checkbox } from '../../../ui/checkbox'
 
 export interface FilterCheckboxProps {
 	text: string
-	value: string
+	value?: string
 	endAdornment?: React.ReactNode
 	onCheckedChange?: (checked: boolean) => void
 	checked?: boolean

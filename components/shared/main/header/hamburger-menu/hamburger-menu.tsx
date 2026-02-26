@@ -56,10 +56,11 @@ export const HamburgerMenu: React.FC<Props> = ({ className }) => {
 								alt='Logo'
 							/>
 						</div>
-						<h1 className=' text-sm sm:text-2xl uppercase font-black'>
+						<h1 className='text-sm sm:text-2xl uppercase font-black pl-2'>
 							QAF GROZNY
 						</h1>
 					</div>
+					<div className='h-1 bg-'></div>
 					<Categories />
 				</div>
 			</div>

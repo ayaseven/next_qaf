@@ -1,7 +1,6 @@
 import { Container, Title } from '@/components/shared'
 // import { Filters } from '@/components/shared/filter'
-import { TopRowOfCategories } from '@/components/shared/main'
-import { ProductGroupList } from '@/components/shared/product'
+import { ProductGroupList, TopRowOfCategories } from '@/components/shared/main'
 
 export default function Home() {
 	return (
