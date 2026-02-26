@@ -23,7 +23,7 @@ export default function RootLayout({
 		<html lang='en'>
 			<meta name='viewport' content='width=device-width, initial-scale=1.0' />
 			<body className={`${geistSans.variable} antialiased`}>
-				<main className='min-h-screen sm:-w-full'>
+				<main className='min-h-screen sm:-w-full pt-20 sm:pt-0'>
 					<Header />
 					{children}
 				</main>

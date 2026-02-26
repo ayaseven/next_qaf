@@ -39,9 +39,9 @@ export const HamburgerMenu: React.FC<Props> = ({ className }) => {
 			</Button>
 			<div
 				className={cn(
-					'flex py-8 fixed top-0 right-0 z-20 sm:hidden border bg-white transition-all duration-500 ease-in-out',
+					'flex  py-8 fixed top-0 right-0 z-20 sm:hidden border bg-white transition-all duration-500 ease-in-out',
 					pressing
-						? 'w-60 h-dvh opacity-100'
+						? 'w-4/5 h-dvh opacity-100'
 						: 'w-0 h-dvh opacity-0 pointer-events-none',
 				)}
 			>
@@ -61,7 +61,7 @@ export const HamburgerMenu: React.FC<Props> = ({ className }) => {
 						</h1>
 					</div>
 					<div className='h-1 bg-'></div>
-					<Categories />
+					<Categories pressing={pressing} setPressing={setPressing} />
 				</div>
 			</div>
 		</div>

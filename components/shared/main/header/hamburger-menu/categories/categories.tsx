@@ -2,9 +2,11 @@
 
 import { cn } from '@/lib/utils'
 import { useCategoryStore } from '@/store/category'
-import React from 'react'
+import React, { Dispatch, SetStateAction } from 'react'
 
 interface Props {
+	pressing: Boolean
+	setPressing: Dispatch<SetStateAction<boolean>>
 	className?: string
 }
 const cats = [
@@ -16,7 +18,11 @@ const cats = [
 	{ id: 6, name: 'Десерты' },
 	{ id: 7, name: 'Супы' },
 ]
-export const Categories: React.FC<Props> = ({ className }) => {
+export const Categories: React.FC<Props> = ({
+	className,
+	pressing,
+	setPressing,
+}) => {
 	const categoryActiveId = useCategoryStore(state => state.activeId)
 
 	return (
@@ -30,6 +36,7 @@ export const Categories: React.FC<Props> = ({ className }) => {
 					)}
 					href={`/#${name}`}
 					key={i}
+					onClick={() => setPressing(prev => !prev)}
 				>
 					{name}
 				</a>

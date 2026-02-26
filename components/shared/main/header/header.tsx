@@ -14,7 +14,12 @@ interface Props {
 
 export const Header: React.FC<Props> = ({ className }) => {
 	return (
-		<header className={cn('border-b border-gray-100', className)}>
+		<header
+			className={cn(
+				'fixed sm:static top-0 left-0 right-0 z-30 border-b border-gray-100 bg-white',
+				className,
+			)}
+		>
 			<Container className='flex items-center justify-between py-8 px-2'>
 				{/*Левая часть*/}
 				<Link href='/'>
