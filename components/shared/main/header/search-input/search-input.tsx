@@ -1,21 +1,29 @@
 'use client'
 
+import { Product } from '@/lib/generated/prisma'
 import { cn } from '@/lib/utils'
 import { Search } from 'lucide-react'
 import Link from 'next/link'
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { useClickAway } from 'react-use'
-
+import { Api } from '../../../../../app/services/api-client'
 interface Props {
 	className?: string
 }
 
 export const SearchInput: React.FC<Props> = ({ className }) => {
 	const [focused, setFocused] = useState(false)
+	const [searchQuery, setSearchQuery] = useState('')
+	const [products, setProducts] = useState<Product[]>([])
 	const ref = useRef(null)
 	useClickAway(ref, () => {
 		setFocused(false)
 	})
+	useEffect(() => {
+		Api.products.search(searchQuery).then(items => {
+			setProducts(items)
+		})
+	}, [searchQuery])
 	return (
 		<>
 			{focused && (
@@ -35,6 +43,8 @@ export const SearchInput: React.FC<Props> = ({ className }) => {
 						type='text'
 						placeholder='Найти'
 						onFocus={() => setFocused(true)}
+						value={searchQuery}
+						onChange={e => setSearchQuery(e.target.value)}
 					/>
 					<div
 						className={cn(
@@ -42,16 +52,20 @@ export const SearchInput: React.FC<Props> = ({ className }) => {
 							focused && 'visible opacity-100 top-12',
 						)}
 					>
-						<Link
-							className='flex items-center gap-2 px-3 py-2 hover:bg-primary/10'
-							href='/search'
-						>
-							<img
-								className='rounded-sm w-8 h-8'
-								src='https://optim.tildacdn.com/tild3135-3738-4162-a431-663364323563/-/format/webp/noroot.png.webp'
-							/>
-							<div></div>
-						</Link>
+						{products.map(product => (
+							<Link
+								key={product.id}
+								className='flex items-center gap-2 px-3 py-2 hover:bg-primary/10'
+								href={`/products/${product.id}`}
+							>
+								<img
+									className='rounded-sm w-8 h-8'
+									src={product.imageUrl}
+									alt={product.name}
+								/>
+								<div>{product.name}</div>
+							</Link>
+						))}
 					</div>
 				</div>
 			</div>
