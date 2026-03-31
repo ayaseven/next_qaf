@@ -1,7 +1,7 @@
 import React from 'react'
-import { Input } from '../../../ui'
 import { RangeSlider } from '../../range-slider'
 import { Title } from '../../title'
+import { Input } from '../../ui'
 import { FilterCheckbox } from './filter-checkbox'
 
 interface Props {

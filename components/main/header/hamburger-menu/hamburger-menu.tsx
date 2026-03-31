@@ -86,7 +86,6 @@ export const HamburgerMenu: React.FC<Props> = ({ className }) => {
         </div>
         {/* ============================================================ */}
 
-
         {/* Контент меню (Список категорий) */}
         <div className="flex-1 overflow-y-auto py-5 px-3">
           {/* Важно: Передаем setIsOpen, чтобы при клике на категорию 

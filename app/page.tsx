@@ -1,5 +1,5 @@
-import { Container, Title } from '@/components/shared'
-import { ProductGroupList, TopRowOfCategories } from '@/components/shared/main'
+import { ProductGroupList, TopRowOfCategories } from '@/components/main'
+import { Container, Title } from '@/components/main/shared'
 import { prisma } from '@/prisma/prisma-client'
 
 export default async function Home() {
