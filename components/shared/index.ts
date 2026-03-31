@@ -1,6 +1,0 @@
-export { ProductCard } from '../main/product/product-card'
-export { SortPopup } from '../main/upper-categories/sort-popup'
-export { TopRowOfCategories } from '../main/upper-categories/top-row-of-categories'
-export { Container } from './container'
-export { RangeSlider } from './range-slider'
-export { Title } from './title'
