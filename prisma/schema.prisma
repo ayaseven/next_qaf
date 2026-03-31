@@ -44,6 +44,7 @@ model Product {
   imageUrl String
   text     String
   price    String
+  items    ProductItem[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -51,6 +52,19 @@ model Product {
   ingredient Ingredient[]
   category   Category     @relation(fields: [categoryId], references: [id])
   categoryId Int
+}
+
+model ProductItem {
+  id Int @id @default(autoincrement())
+
+  price     Int
+  size      Int?
+  pizzaType Int?
+
+  cartItems CartItem[]
+
+  product   Product @relation(fields: [productId], references: [id])
+  productId Int
 }
 
 model Ingredient {
@@ -94,6 +108,8 @@ model CartItem {
   cart          Cart         @relation(fields: [cartId], references: [id])
   cartId        Int
   ingredient    Ingredient[]
+
+  productItems ProductItem[]
 }
 
 model Order {

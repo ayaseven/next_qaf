@@ -39,7 +39,7 @@ export const ProductCard: React.FC<Props> = ({
 					<span className='text-[15px] text-orange-600 pt-2'>
 						<b className=''>{price} ₽</b>
 					</span>
-					<p className='text-sm text-gray-400'>{ingredients}</p>
+					<p className='text-sm text-gray-400 mx-5'>{ingredients}</p>
 					<div className='flex flex-col  items-center mt-4 pb-5 px-5 sm:transition-all sm:hover:scale-105 sm:duration-300'>
 						<Button size={'cardProductSize'} variant='default'>
 							<ShoppingBasket size={20} className='mr-1' />
