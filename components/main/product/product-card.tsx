@@ -2,7 +2,7 @@ import { Button } from '@/components/ui'
 import { ShoppingBasket } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
-import { Title } from '../../title'
+import { Title } from '../shared/title'
 
 interface Props {
 	id: number
@@ -35,7 +35,7 @@ export const ProductCard: React.FC<Props> = ({
 					/>
 				</div>
 				<div className='bg-gray-50 shadow-2xl  rounded-b-2xl text-center'>
-					<Title text={name} size='xs' className='mb-1 font-bold pt-2' />
+					<Title text={name} size='xs' className='mb-1 font-bold pt-2 ' />
 					<span className='text-[15px] text-orange-600 pt-2'>
 						<b className=''>{price} ₽</b>
 					</span>

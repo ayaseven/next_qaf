@@ -1,7 +1,7 @@
 import { Category } from '@/lib/generated/prisma'
 import { cn } from '@/lib/utils'
 import React from 'react'
-import { Container } from '../../container'
+import { Container } from '../shared/container'
 import { Categories } from './categories'
 import { SortPopup } from './sort-popup'
 

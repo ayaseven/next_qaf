@@ -1,6 +1,6 @@
 import React from 'react'
-import { RangeSlider } from '../../range-slider'
-import { Title } from '../../title'
+import { RangeSlider } from '../shared/range-slider'
+import { Title } from '../shared/title'
 import { Input } from '../../ui'
 import { FilterCheckbox } from './filter-checkbox'
 
